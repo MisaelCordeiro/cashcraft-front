@@ -11,6 +11,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { CategoriaNewComponent } from './categoria-new/categoria-new.component';
 import { CategoriaUpdateComponent } from './categoria-update/categoria-update.component';
 import { CategoriaDeleteComponent } from './categoria-delete/categoria-delete.component';
+import { UsuarioHomeComponent } from './usuario-home/usuario-home.component';
+import { UsuarioNewComponent } from './usuario-new/usuario-new.component';
+import { UsuarioUpdateComponent } from './usuario-update/usuario-update.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { CategoriaDeleteComponent } from './categoria-delete/categoria-delete.co
     CategoriaHomeComponent,
     CategoriaNewComponent,
     CategoriaUpdateComponent,
-    CategoriaDeleteComponent
+    CategoriaDeleteComponent,
+    UsuarioHomeComponent,
+    UsuarioNewComponent,
+    UsuarioUpdateComponent
   ],
   entryComponents: [CategoriaDeleteComponent],
   imports: [

@@ -1,0 +1,8 @@
+table, a{
+    margin: 20px 0px 0px 40px;
+    width: calc(100% - 80px);
+}
+
+td mat-cell button {
+    margin-left: 5px; 
+  }
