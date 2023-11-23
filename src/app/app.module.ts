@@ -14,6 +14,7 @@ import { CategoriaDeleteComponent } from './categoria-delete/categoria-delete.co
 import { UsuarioHomeComponent } from './usuario-home/usuario-home.component';
 import { UsuarioNewComponent } from './usuario-new/usuario-new.component';
 import { UsuarioUpdateComponent } from './usuario-update/usuario-update.component';
+import { UsuarioDeleteComponent } from './usuario-delete/usuario-delete.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { UsuarioUpdateComponent } from './usuario-update/usuario-update.componen
     CategoriaDeleteComponent,
     UsuarioHomeComponent,
     UsuarioNewComponent,
-    UsuarioUpdateComponent
+    UsuarioUpdateComponent,
+    UsuarioDeleteComponent
   ],
   entryComponents: [CategoriaDeleteComponent],
   imports: [

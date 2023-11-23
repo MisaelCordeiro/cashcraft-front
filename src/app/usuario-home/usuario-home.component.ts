@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UsuarioService } from '../usuario.service';
 import { Router } from '@angular/router';
 import { MatDialog } from '@angular/material';
+import { UsuarioDeleteComponent } from '../usuario-delete/usuario-delete.component';
 
 @Component({
   selector: 'app-usuario-home',
@@ -28,7 +29,12 @@ export class UsuarioHomeComponent implements OnInit {
     usuario.showPassword = !usuario.showPassword;
 
   }
-
+ 
+  openDeleteDialog(usuarioId: number): void{
+    const dialogRef = this.dialog.open(UsuarioDeleteComponent, {data: {
+      usuarioId: usuarioId
+    }});
+  }
 
 
 
