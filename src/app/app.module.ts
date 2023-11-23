@@ -28,7 +28,7 @@ import { UsuarioDeleteComponent } from './usuario-delete/usuario-delete.componen
     UsuarioUpdateComponent,
     UsuarioDeleteComponent
   ],
-  entryComponents: [CategoriaDeleteComponent],
+  entryComponents: [CategoriaDeleteComponent, UsuarioDeleteComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
