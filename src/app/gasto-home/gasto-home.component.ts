@@ -19,6 +19,11 @@ export class GastoHomeComponent implements OnInit {
     })
   }
 
+  editGasto(gasto: any){
+    this.router.navigate(['gasto/update', gasto]);
+
+  }
+
   displayedColumns: string[] = ['id', 'usuario_id', 'categoria_id', 'monto', 'descripcion', 'fecha', 'actions'];
 
 }

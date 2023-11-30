@@ -24,7 +24,7 @@ export class GastoService {
   }
 
   newGasto(gasto: any): void{
-    const url = "http://localhost:30030/gastos/new";
+    const url = "http://localhost:30030/gastos/add";
     const headers = new HttpHeaders().set('Content-Type','application/json');
     const body = gasto;
     this.http.post(url, body, {headers}).subscribe();

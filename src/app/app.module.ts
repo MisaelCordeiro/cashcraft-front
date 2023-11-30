@@ -18,6 +18,7 @@ import { UsuarioDeleteComponent } from './usuario-delete/usuario-delete.componen
 import { GastoHomeComponent } from './gasto-home/gasto-home.component';
 import { GastoNewComponent } from './gasto-new/gasto-new.component';
 import { GastoUpdateComponent } from './gasto-update/gasto-update.component';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,9 @@ import { GastoUpdateComponent } from './gasto-update/gasto-update.component';
 
     
   ],
-  providers: [],
+  providers: [
+    DatePipe
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
