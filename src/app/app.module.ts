@@ -19,6 +19,7 @@ import { GastoHomeComponent } from './gasto-home/gasto-home.component';
 import { GastoNewComponent } from './gasto-new/gasto-new.component';
 import { GastoUpdateComponent } from './gasto-update/gasto-update.component';
 import { DatePipe } from '@angular/common';
+import { GastoDeleteComponent } from './gasto-delete/gasto-delete.component';
 
 @NgModule({
   declarations: [
@@ -33,9 +34,10 @@ import { DatePipe } from '@angular/common';
     UsuarioDeleteComponent,
     GastoHomeComponent,
     GastoNewComponent,
-    GastoUpdateComponent
+    GastoUpdateComponent,
+    GastoDeleteComponent
   ],
-  entryComponents: [CategoriaDeleteComponent, UsuarioDeleteComponent],
+  entryComponents: [CategoriaDeleteComponent, UsuarioDeleteComponent, GastoDeleteComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

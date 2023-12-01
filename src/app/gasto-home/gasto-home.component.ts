@@ -24,6 +24,10 @@ export class GastoHomeComponent implements OnInit {
 
   }
 
+  openDeleteDialog(gastoId: number): void{
+    
+  }
+
   displayedColumns: string[] = ['id', 'usuario_id', 'categoria_id', 'monto', 'descripcion', 'fecha', 'actions'];
 
 }
