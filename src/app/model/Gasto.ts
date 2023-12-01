@@ -5,4 +5,5 @@ export class Gasto{
     monto: number;
     descripcion: string;
     fecha: Date;
+    fecha_ant: string;
 }

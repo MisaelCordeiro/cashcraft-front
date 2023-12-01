@@ -42,6 +42,10 @@ export class GastoUpdateComponent implements OnInit {
   loadCategorias(){
     this.categoriaService.getCategorias().subscribe(data =>{
       this.categorias = data;
+
+      if (this.gasto.fecha){
+        this.gasto.fecha_ant = this.formatDate(this.gasto.fecha);
+      }
     })
   }
 
@@ -59,7 +63,17 @@ export class GastoUpdateComponent implements OnInit {
     this.router.navigate(['/gastos']);
   }
 
+  formatDate(date: Date): string {
+    return this.datePipe.transform(date, 'yyyy-MM-dd') || '';
+  }
 
-  updateGasto(){}
+
+  updateGasto(){
+    if (this.gasto.fecha_ant){
+      this.gasto.fecha = new Date(this.gasto.fecha_ant);
+    }
+    this.gastosService.updateGasto(this.gasto);
+    this.navigateToHome();
+  }
 
 }
