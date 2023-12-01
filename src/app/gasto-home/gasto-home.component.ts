@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { GastoService } from '../gasto.service';
 import { Router } from '@angular/router';
 import { MatDialog } from '@angular/material';
+import { GastoDeleteComponent } from '../gasto-delete/gasto-delete.component';
 
 @Component({
   selector: 'app-gasto-home',
@@ -25,7 +26,7 @@ export class GastoHomeComponent implements OnInit {
   }
 
   openDeleteDialog(gastoId: number): void{
-    
+    this.dialog.open(GastoDeleteComponent, {data: {gastoId: gastoId}});
   }
 
   displayedColumns: string[] = ['id', 'usuario_id', 'categoria_id', 'monto', 'descripcion', 'fecha', 'actions'];
