@@ -9,9 +9,11 @@ import { UsuarioUpdateComponent } from './usuario-update/usuario-update.componen
 import { GastoHomeComponent } from './gasto-home/gasto-home.component';
 import { GastoNewComponent } from './gasto-new/gasto-new.component';
 import { GastoUpdateComponent } from './gasto-update/gasto-update.component';
+import { ChartsComponent } from './charts/charts.component';
 
 
 const routes: Routes = [
+  { path: '', component: ChartsComponent},
   { path: 'categorias', component: CategoriaHomeComponent},
   { path: 'categoria/new', component: CategoriaNewComponent},
   { path: 'categoria/update/:id', component: CategoriaUpdateComponent},

@@ -20,6 +20,8 @@ import { GastoNewComponent } from './gasto-new/gasto-new.component';
 import { GastoUpdateComponent } from './gasto-update/gasto-update.component';
 import { DatePipe } from '@angular/common';
 import { GastoDeleteComponent } from './gasto-delete/gasto-delete.component';
+import { ChartsComponent } from './charts/charts.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { GastoDeleteComponent } from './gasto-delete/gasto-delete.component';
     GastoHomeComponent,
     GastoNewComponent,
     GastoUpdateComponent,
-    GastoDeleteComponent
+    GastoDeleteComponent,
+    ChartsComponent
   ],
   entryComponents: [CategoriaDeleteComponent, UsuarioDeleteComponent, GastoDeleteComponent],
   imports: [
@@ -54,6 +57,7 @@ import { GastoDeleteComponent } from './gasto-delete/gasto-delete.component';
     MatFormFieldModule,
     MatRadioModule,
     MatDialogModule,
+    NgxChartsModule
 
     
   ],
